@@ -9,7 +9,7 @@
 <body>
 
 
-	<canvas id="canvas" width="900" height="500" />
+	<canvas id="canvas" width="900" height="700" />
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

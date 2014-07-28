@@ -15,8 +15,26 @@
         p.init = function()
         {
 			this.initEaselJS();
-			console.log("EaselJS initialised!", this.stage.canvas);
-        };
+
+			// now create a simon
+			this.createSimon();
+
+			// move the simon
+			TweenMax.to(this.simon1.bmp, 3, {x:600, y:300, scaleX:.5, scaleY:.5, rotation:30, ease:Sine.easeInOut});
+        }
+
+		p.createSimon = function()
+		{
+			// create a Simon + initialise
+			this.simon1 = new namespace.Simon();
+			this.simon1.init();
+
+			// add the Simon's Bitmap to the stage
+			this.stage.addChild(this.simon1.bmp);
+		}
+
+
+		// INITIALISE EASEL JS
 
 		p.initEaselJS = function()
 		{
@@ -31,6 +49,14 @@
 
 			createjs.Ticker.setFPS(60);
 			createjs.Ticker.useRAF = true;
+
+			// make stage update every frame
+			createjs.Ticker.addEventListener("tick", this.render.bind(this)); // bound to scope of this instance of this class
+		}
+
+		p.render = function()
+		{
+			this.stage.update();
 		}
     }
 
