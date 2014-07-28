@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectTasksOptions">
+    <TaskOptions isEnabled="false">
+      <option name="arguments" value="RequestAnimationFrame.js leaflet-custom-src.js magictouch.js NavigatorArea.js Navigator.js Map.js Init.js -o ../build/master.min.js" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" value="Concat &amp; Compress .js files" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="js" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="Concat &amp; Minify Master" />
+      <option name="output" value="../build/master.min.js" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="passParentEnvs" value="true" />
+      <option name="program" value="$ProjectFileDir$/node_modules/uglify-js/bin/uglifyjs" />
+      <option name="scopeName" value="JS_DEV_FOLDERS" />
+      <option name="trackOnlyRoot" value="true" />
+      <option name="workingDir" value="$ProjectFileDir$/js/dev/" />
+      <envs />
+    </TaskOptions>
+    <TaskOptions isEnabled="false">
+      <option name="arguments" value="Function.prototype.bind.js jquery.hotkeys.js keyBinding.js Tools.js Main.js MinMax.js  -o ../../build/libs.min.js" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" value="Concat &amp; Compress .js files" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="js" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="Concat &amp; Minify Libs" />
+      <option name="output" value="../../build/libs.min.js" />
+      <option name="outputFilters">
+        <array />
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="passParentEnvs" value="true" />
+      <option name="program" value="$ProjectFileDir$/node_modules/uglify-js/bin/uglifyjs" />
+      <option name="scopeName" value="JS_DEV_FOLDERS" />
+      <option name="trackOnlyRoot" value="true" />
+      <option name="workingDir" value="$ProjectFileDir$/js/dev/libs/" />
+      <envs />
+    </TaskOptions>
+  </component>
+</project>
+
